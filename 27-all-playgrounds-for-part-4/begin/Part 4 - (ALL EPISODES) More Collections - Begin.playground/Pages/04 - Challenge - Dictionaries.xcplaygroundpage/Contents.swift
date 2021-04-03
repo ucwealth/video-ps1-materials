@@ -15,7 +15,7 @@
  As part of the initialization, assign each of those keys a value that corresponds to your own personal information.
  
  */
-
+var myDict = ["name":"Uche", "profession":"Software Engineer", "country":"Nigeria", "city":"Lagos"]
 
 /*:
  
@@ -28,7 +28,10 @@
  - Add a `state` key to the dictionary and assign it the value `Ohio`
  
  */
-
+myDict.updateValue("USA", forKey: "country")
+myDict["city"] = "Cleveland"
+myDict["state"] = "Ohio"
+print(myDict)
 
 /*:
  
@@ -40,8 +43,10 @@
  - Remove the `state` key-value pair with a different strategy.
  
  */
+myDict.removeValue(forKey: "city")
+print(myDict)
 
-
+myDict["state"] = nil
 
 /*:
  
@@ -50,6 +55,9 @@
  Iterate over the remaining keys and values in the dictionary and print them out.
  
  */
+for i in myDict {
+    print(i)
+}
 
 
 
