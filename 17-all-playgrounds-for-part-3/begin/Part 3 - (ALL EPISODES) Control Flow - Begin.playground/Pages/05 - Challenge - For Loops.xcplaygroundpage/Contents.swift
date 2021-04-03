@@ -16,7 +16,9 @@
  Print out the value of `i` inside the loop.
  
  */
-
+for i in 1...100 where i % 5 == 0{
+    print(i)
+}
 
 /*:
  
@@ -35,7 +37,10 @@
  When you have your loop working, change the `rangeStart` constant to a different number to create a different range.
  
  */
-
+let rangeStart = 19
+for rangeValue in rangeStart..<rangeStart+3 {
+    print("Range value is \(rangeValue)")
+}
 
 
 
@@ -56,6 +61,8 @@
  Execute your playground a few times to see your name printed out a random number of times.
 
  */
-
-
+var randomCount = Int.random(in: 1...5)
+for _ in 1...randomCount {
+    print("Uche")
+}
 //: [⇒ Next: 06 - Iterating Collections](@next)

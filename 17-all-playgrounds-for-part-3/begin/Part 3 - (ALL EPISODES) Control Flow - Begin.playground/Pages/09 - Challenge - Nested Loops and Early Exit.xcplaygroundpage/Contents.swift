@@ -27,7 +27,12 @@
 
 
  */
-
+for _ in 1...5 {
+    for _ in 1...10 {
+        print("*", terminator: "")
+    }
+    print()
+}
 
 
 /*:
@@ -47,6 +52,12 @@
  */
 
 var pastries: [String] = ["cookie", "danish", "cupcake", "donut", "pie", "brownie", "fritter", "cruller"]
+for pastry in pastries {
+    if pastry.count <= 5 {
+        print(pastry)
+    }
+    continue
+}
 
 
 
@@ -63,3 +74,13 @@ var pastries: [String] = ["cookie", "danish", "cupcake", "donut", "pie", "browni
 let daysOfTheWeek: [String] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
 
+for day in daysOfTheWeek {
+    if day == "Sunday" {
+        continue
+    }
+    if day == "Friday" {
+        print("Friday")
+        break
+    }
+    print(day)
+}

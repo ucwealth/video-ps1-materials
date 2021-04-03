@@ -15,6 +15,10 @@
 var players = ["Alice", "Bob", "Dan", "Eli", "Frank"]
 
 // TODO: Write solution here
+players.count
+players.contains("Charles")
+players.first
+players.last
 
 
 /*:
@@ -27,6 +31,11 @@ var players = ["Alice", "Bob", "Dan", "Eli", "Frank"]
  */
 
 // TODO: Write solution here
+//let Manga = ["ee", "rrr", "wwww"]
+//players.insert(contentsOf: Manga, at: 1)
+players.insert("Charles", at: 2)
+players.insert(contentsOf: ["Gloria","Hermione"], at: players.count)
+
 
 
 /*:
@@ -37,5 +46,6 @@ var players = ["Alice", "Bob", "Dan", "Eli", "Frank"]
 
 // TODO: Write solution here
 
-
+let teamOne = Array(players[4...7])
+teamOne[0]
 //: [Next](@next)
